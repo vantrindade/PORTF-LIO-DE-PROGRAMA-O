@@ -1,0 +1,102 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: auto;
+  background-color: rgb(187, 193, 199);
+  padding: auto;
+  
+}
+header {
+  background-image: url(bg-3.jpg);
+  height: 500px;
+  background-size: cover;
+  background-position: right center;
+  padding: 1px;
+}
+li {
+ margin: 20px 50px 0 0;
+ list-style: none;
+ display: inline-block;
+ background-color: rgb(0, 0, 0, .3);
+ padding: 8px;
+ border: solid white;
+
+
+}
+a {
+  color: white;
+  padding: 10px;
+  text-transform: uppercase;
+  font-size: 12px;
+  text-decoration: none;  
+}
+ul {
+  text-align: right;
+}
+h1 {
+  color: white;
+  text-shadow: 2px 2px 2px rgb(10, 10, 10);
+  font-size: 50px;
+  margin: 50px auto 0;
+  width: 80%;
+  text-align: center;
+  text-transform: uppercase;
+}
+p {
+color: white;
+  background-color: rgb(0, 0, 0, .7);
+  padding: 15px;
+  margin: 50px auto 5px;
+  width: 30%;
+  text-align: center;
+  border-bottom: solid white;
+
+}
+h2 {
+  background-color: rgb(190, 190, 190);
+  padding: 2px 10px;
+}
+
+main {
+  width: 80%;
+  padding: 1rem 9rem;
+  margin: 1rem 1rem;
+}
+
+.a {
+  color: rgb(19, 19, 234);
+  border-bottom: solid rgb(19, 19, 234);
+  background-color: rgb(196, 196, 197);
+  border-radius: 5%;
+  display: inline-block;
+}
+
+.html {
+  border: solid white;
+  background-color: white;
+  padding: 1rem 1rem;
+  margin: 1rem 1rem;
+  
+}
+
+.css {
+  border: solid white;
+  background-color: white;
+  padding: 1rem 1rem;
+  margin: 1rem 1rem;
+}
+
+.JavaScript {
+  border: solid white;
+  background-color: white;
+  padding: 1rem 1rem;
+  margin: 1rem 1rem;
+}
+
+footer {
+  color: white;
+  background-color: #6b6c68;
+  text-align: center; 
+  padding: 30px;
+  text-shadow: 2px 2px 2px black;
+  letter-spacing: 2px;
+}
