@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio | [matheus FT]</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <div class="profile">
+            <img src="eu.jpg">
+            <h1>Matheus ferreira trindade</h1>
+            <p class="tagline">desenvolvedor inciante</p>
+        </div>
+        
+        <nav>
+            <ul>
+                <li><a href="#sobre">Sobre Mim</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="sobre">
+            <h2>Sobre Mim</h2>
+            <p>estou no 2º ano de analise e desenvolvimento de sistemas. <br>
+ atualmento estou  me focando em desenvolvimento web
+  treinando minhas habilidades em HTMl, CSS e JavaScript,
+aspiro em me torna um desenvolvedor full stack </p>
+        </section>
+
+        <section id="habilidades">
+            <h2>Habilidades</h2>
+            <ul class="skills-list">
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScriptES6</li>
+                <li>familiaridade com github</li>
+                <li>Noções de responsividade e Mobile First Design</li>
+                <li>Conhecimento básico de React.js</li>
+                <li>familiaridade com Visual Studio Code</li>
+                <li>Proatividade e interesse em se desenvolver na área</li>
+            </ul>
+        </section>
+
+        <section id="projetos">
+            <h2>Projetos</h2>
+            <article class="project">
+                <h3>Projeto 1</h3>
+                <p>curriculo</p>
+            </article>
+
+            <article class="project">
+                <h3>Projeto 2</h3>
+                <p>site de cursos web desenvolvedor</p>
+            </article>
+
+              <article class="project">
+                <h3>Projeto 2</h3>
+                <p>lista-de-contato</p>
+            </article>
+        </section>
+
+        <aside>
+            <h3>Curiosidades</h3>
+            <p>me sentindo ansioso</p>
+            <div class="social-links">
+                <a href="https://github.com/vantrindade">GitHub</a>
+                <a href="https://www.linkedin.com/in/matheus-ferreira-trindade-284308227/">LinkedIn</a>
+            </div>
+        </aside>
+    </main>
+
+    <footer id="contato">
+        <section class="foot">
+        <h4>Contato</h4>
+        <p>gmail: <a>vantriande.matheus@gmail.com</a></p>
+        <p>celular:<a>(11)999450057</a></p>
+    </footer>
+</body>
+
+</html>
