@@ -3,6 +3,7 @@ body {
   margin: auto;
   background-color: rgb(187, 193, 199);
   padding: auto;
+  min-width: 200px;
   
 }
 header {
@@ -19,8 +20,6 @@ li {
  background-color: rgb(0, 0, 0, .3);
  padding: 8px;
  border: solid white;
-
-
 }
 a {
   color: white;
@@ -60,6 +59,7 @@ main {
   width: 80%;
   padding: 1rem 9rem;
   margin: 1rem 1rem;
+  min-width: 200px;
 }
 
 .a {
@@ -99,4 +99,9 @@ footer {
   padding: 30px;
   text-shadow: 2px 2px 2px black;
   letter-spacing: 2px;
+}
+
+h3 a {
+  background-color: rgb(84, 84, 87);
+  color: rgb(19, 19, 234);
 }
