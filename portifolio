@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Portfólio | [matheus FT]</title>
+    <title>Meu Portfólio matheus F.T</title>
     <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
@@ -27,10 +27,14 @@
     <main>
         <section id="sobre">
             <h2>Sobre Mim</h2>
-            <p>estou no 2º ano de analise e desenvolvimento de sistemas. <br>
- atualmento estou  me focando em desenvolvimento web
-  treinando minhas habilidades em HTMl, CSS e JavaScript,
-aspiro em me torna um desenvolvedor full stack </p>
+            <p> Estou no 2º ano do curso de Análise e Desenvolvimento de Sistemas
+                 e tenho me dedicado
+     ao aprendizado constante na área de desenvolvimento Front-End. <br>
+    Tenho conhecimento em HTML, CSS e JavaScript, e estou aprendendo frameworks
+ como React. <br> Sou curioso, gosto de resolver problemas e estou sempre buscando
+  melhorar minhas habilidades técnicas e criativas. <br>
+    Busco uma oportunidade de estágio onde eu possa aplicar meus conhecimentos,
+     aprender com profissionais experientes e contribuir com projetos reais.</p>
         </section>
 
         <section id="habilidades">
@@ -52,25 +56,27 @@ aspiro em me torna um desenvolvedor full stack </p>
             <article class="project">
                 <h3>Projeto 1</h3>
                 <p>curriculo</p>
+                <a href="curriculo/curriculo.html" alt="curriculo">curriculo profissiona</a>
             </article>
 
             <article class="project">
                 <h3>Projeto 2</h3>
-                <p>site de cursos web desenvolvedor</p>
+                <p>lista de contato</p>
+                <a href="listas de contato/listas.contato.html" alt="site-dev-web">lista de contato</a>
             </article>
 
               <article class="project">
-                <h3>Projeto 2</h3>
-                <p>lista-de-contato</p>
+                <h3>Projeto 3</h3>
+                <p>site de cursos web desenvolvedor</p>
+                <a href="sites de cursos/index.html" alt="curso web dev">cursos web dev</a>
             </article>
         </section>
 
         <aside>
-            <h3>Curiosidades</h3>
-            <p>me sentindo ansioso</p>
+            <h3>redes sociais</h3>
             <div class="social-links">
                 <a href="https://github.com/vantrindade">GitHub</a>
-                <a href="https://www.linkedin.com/in/matheus-ferreira-trindade-284308227/">LinkedIn</a>
+                <a href="https://www.linkedin.com/in/matheus-ferreira-trindade-284308227/">Linkedin</a>
             </div>
         </aside>
     </main>
