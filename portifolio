@@ -65,13 +65,19 @@
                 <a href="listas de contato/listas.contato.html" alt="site-dev-web">lista de contato</a>
             </article>
 
-              <article class="project">
+        <article class="project">
                 <h3>Projeto 3</h3>
                 <p>site de cursos web desenvolvedor</p>
                 <a href="sites de cursos/index.html" alt="curso web dev">cursos web dev</a>
             </article>
         </section>
 
+       <article class="project">
+                <h3>Projeto 4</h3>
+                <p>site de vendas de planos</p>
+                <a href="vendas/vendas de planos.html" alt="curso web dev">cursos web dev</a>
+       </article>
+ 
         <aside>
             <h3>redes sociais</h3>
             <div class="social-links">
