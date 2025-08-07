@@ -1,0 +1,111 @@
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    background-color: #0c1014;
+    color: white;
+    width: 90%;
+    max-width: 960px;
+    margin: 0 auto;
+}
+header {
+    align-items: center;
+    display: flex;
+    width: 1020px;
+    height: 80px;
+    background-color: #05080a;
+}
+
+.nome-site {
+    display: flex;
+    margin: 0 20px;
+    font-size: 36px;
+}
+
+.listas-1 {
+    display: flex;
+    margin: 480px;
+    gap: 16px;
+    list-style-type: none;
+}
+
+.li {
+    box-sizing: border-box;
+}
+
+header li :hover {
+    text-decoration: underline;
+}
+
+li a {
+  text-decoration: none;
+  color: white;
+  padding: 9px;
+  border-radius: 6px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 62px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+}
+
+.planos {
+    background-color: #cbe300;
+    color: #0c1014;
+    pointer-events: none;
+}
+
+
+.mae {
+    display: flex;
+    gap: 36px;
+}
+
+h2 {
+    border-bottom: 2px solid #cbe300;
+    margin-top: 0;
+    padding-bottom: 10px;
+    letter-spacing: 2px;
+}
+
+p {
+    margin-top: 0;
+    font-size: 31px;
+}
+.valores{
+    flex: 1;
+    background-color: #1f262c;
+    padding: 30px;
+    border-radius: 6px;
+    box-shadow: 0 5px 12px black;
+    display: flex;
+    flex-direction: column;
+}
+
+.listas-2 {
+    margin: 0 0 35px;
+    color: #b5b5b5;
+    padding-left: 16px;
+    line-height: 1.8;
+    flex-grow: 1;
+}
+.listas-2 li::marker {
+    color: #cbe300;
+}
+
+.assine {
+    text-decoration: none;
+    color: black;
+    background-color: #cbe300;
+    border-radius: 16px;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 16px;
+    text-align: center;
+}
+.assine:hover{
+    outline: 2px solid #cbe300;
+    background-color: transparent;
+}
