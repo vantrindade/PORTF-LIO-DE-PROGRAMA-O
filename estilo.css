@@ -1,0 +1,56 @@
+html,
+body {
+  min-height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+
+  background-color: #ccc;
+  background-image: url(../imagens/bg-2.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  }
+
+.titulo{
+  text-align: center;
+  color: white;
+  
+}
+
+h1 {
+  font-size: 70px;
+  text-shadow: 2px 2px 2px rgb(10, 10, 10);
+  margin-bottom: 1px;
+  margin-top: 1px;
+}
+
+.barra {
+ background-color: rgb(0, 0, 0, .7);
+ font-size: 18px;
+ padding: 16px;
+ display: inline-block;
+ border-bottom: 2px solid;
+}
+
+.mae {
+  display: flex;
+  flex-wrap: wrap;
+  width: 960px;
+  margin: auto;
+  padding-bottom: 20px;
+}
+
+.filho {
+  border: solid white 10px;
+  background-color: #393539;
+}
+
+.bastardor {
+  color: white;
+  font-size: 15px;
+}
+
+.bastardor p {
+  padding-left: 10px;
+}
