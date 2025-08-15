@@ -40,11 +40,10 @@
         <section id="habilidades">
             <h2>Habilidades</h2>
             <ul class="skills-list">
+                <li>JavaScriptES6</li>
                 <li>HTML5</li>
                 <li>CSS3</li>
-                <li>JavaScriptES6</li>
                 <li>familiaridade com github</li>
-                <li>Noções de responsividade e Mobile First Design</li>
                 <li>Conhecimento básico de React.js</li>
                 <li>familiaridade com Visual Studio Code</li>
                 <li>Proatividade e interesse em se desenvolver na área</li>
@@ -55,29 +54,26 @@
             <h2>Projetos</h2>
             <article class="project">
                 <h3>Projeto 1</h3>
-                <p>curriculo</p>
                 <a href="curriculo/curriculo.html" alt="curriculo">curriculo profissiona</a>
             </article>
 
             <article class="project">
                 <h3>Projeto 2</h3>
-                <p>lista de contato</p>
-                <a href="listas de contato/listas.contato.html" alt="site-dev-web">lista de contato</a>
+                <a href="sites de cursos/index.html" alt="curso web dev">layout de um site de cursos web desenvolvedor</a>
             </article>
 
-        <article class="project">
+            <article class="project">
                 <h3>Projeto 3</h3>
-                <p>site de cursos web desenvolvedor</p>
-                <a href="sites de cursos/index.html" alt="curso web dev">cursos web dev</a>
+                <a href="vendas/vendas de planos.html" alt="curso web dev">layout de um site de site de vendas de planos</a>
             </article>
+
+            <article class="project">
+                <h3>Projeto 4</h3>
+                <a href="moda/modas.html" alt="modas viva">layout de um site de moda</a>
+            </article>
+
         </section>
 
-       <article class="project">
-                <h3>Projeto 4</h3>
-                <p>site de vendas de planos</p>
-                <a href="vendas/vendas de planos.html" alt="curso web dev">cursos web dev</a>
-       </article>
- 
         <aside>
             <h3>redes sociais</h3>
             <div class="social-links">
