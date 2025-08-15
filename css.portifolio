@@ -1,6 +1,8 @@
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: rgb(187, 193, 199);
+  margin: 0;
+
 }
 
 header {
@@ -10,8 +12,8 @@ header {
   background-position: bottom;
   background-repeat: no-repeat;
   padding: 20px;
+  margin: 1px;
 }
-
 .profile h1 {
   color: wheat;
  text-shadow: 2px 2px 2px rgb(10, 10, 10);}
@@ -86,13 +88,14 @@ h2 {
 .skills-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: 1.2rem;
+  letter-spacing: 1.2px;
   list-style: none;
 }
 
 .skills-list li {
  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
- background: #65addd;
+ background: #0b73c3df;
  color: rgb(0, 0, 0);
  padding: 0.5rem 0.1rem;
  border-radius: 20px;
@@ -106,6 +109,14 @@ h2 {
 
 .project h3 {
  color: #2c3e50;
+}
+
+.project a {
+  text-decoration: none;
+}
+.project a:hover{
+  text-decoration: underline;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
 
 aside {
