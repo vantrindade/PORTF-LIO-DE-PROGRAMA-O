@@ -13,6 +13,8 @@ header {
   background-repeat: no-repeat;
   padding: 20px;
   margin: 1px;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 .profile h1 {
   color: wheat;
@@ -50,7 +52,8 @@ nav li {
 }
 
 nav a {
-  color: white;
+  color: rgb(251, 235, 235);
+text-shadow: 1px 2px 2px rgb(10, 10, 10);
   text-decoration: none;
   font-weight: bold;
   padding: 1.5rem 1rem;
