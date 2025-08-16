@@ -1,137 +1,148 @@
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  margin: auto;
   background-color: rgb(187, 193, 199);
-  padding: 0;
   margin: 0;
-  min-width: 200px;
 }
-header {
-  background-image: url(bg-3.jpg);
-  height: 30em;
-  background-size: cover;
-  background-position: right center;
-  padding: 1px;
-  flex-wrap: wrap;
-}
-li {
- margin: 20px 50px 0 0;
- list-style: none;
- display: inline-block;
- background-color: rgb(0, 0, 0, .3);
- padding: 8px;
- border: solid white;
- flex-wrap: wrap;
-  
-}
-li a:hover {
-  color: black;
-  text-decoration: underline;
 
-}
-a {
-  color: white;
-  padding: 10px;
-  text-transform: uppercase;
-  font-size: 12px;
-  text-decoration: none;  
-}
-ul {
-  text-align: right;
+header {
+  text-align: center;
+  background-image: url(imagen.fundo1.jpg);
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  padding: 20px;
+  margin: 1px;
   flex-wrap: wrap;
   justify-content: space-between;
 }
-h1 {
-  color: white;
-  text-shadow: 2px 2px 2px rgb(10, 10, 10);
-  font-size: 50px;
-  margin: 50px auto 0;
-  width: 80%;
-  text-align: center;
-  text-transform: uppercase;
+.profile h1 {
+  color: wheat;
+ text-shadow: 2px 2px 2px rgb(10, 10, 10);}
+
+.profile img {
+ width: 150px;
+ height: 150px;
+ border-radius: 80%;
+ object-fit: cover;
+ border: 3px solid rgb(1, 1, 1);
+ margin-bottom: 1rem;
 }
-p {
-color: white;
-  background-color: rgb(0, 0, 0, .7);
-  padding: 15px;
-  margin: 50px auto 5px;
-  width: 30%;
-  text-align: center;
-  border-bottom: solid white;
+
+.tagline {
+ font-style: italic;
+ margin: 0.5rem 0;
+ font-size: 30px;
+ color: wheat;
+ text-shadow: 2px 2px 2px rgb(10, 10, 10);
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 2rem;
+}
+
+nav li {
+  margin: 1rem;
+  text-shadow: 2px 2px 2px rgb(10, 10, 10);
+  font-size: 20px;
 
 }
-h2 {
-  background-color: rgb(190, 190, 190);
-  padding: 2px 10px;
+
+nav a {
+  color: rgb(251, 235, 235);
+  text-shadow: 1px 2px 2px rgb(10, 10, 10);
+  text-decoration: none;
+  font-weight: bold;
+  padding: 1.5rem 1rem;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  padding: 0;
+  min-width: 200px;
+}
+
+nav a:hover {
+ background-color: rgba(255, 255, 255, 0.2);
 }
 
 main {
-  width: 80%;
-  padding: 1rem 9rem;
-  margin: 1rem 1rem;
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0.1rem;
 }
 
-.a {
-  color: rgb(19, 19, 234);
-  border-bottom: solid rgb(19, 19, 234);
-  background-color: rgb(196, 196, 197);
-  border-radius: 5%;
-  display: inline-block;
+section {
+ margin-bottom: 3rem;
+ padding: 1.5rem;
+ background: white;
+ border-radius: 8px;
+ box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-.a:hover {
- background-color: rgba(18, 8, 8, 0.2);
+h2 {
+ color: #2c3e50;
+ margin-bottom: 1rem;
+ padding-bottom: 0.5rem;
+ border-bottom: 2px solid #3498db;
 }
 
-.html {
-  border: solid white;
-  background-color: white;
-  padding: 1rem 1rem;
-  margin: 1rem 1rem;
-  
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+  letter-spacing: 1.2px;
+  list-style: none;
 }
 
-.css {
-  border: solid white;
-  background-color: white;
-  padding: 1rem 1rem;
-  margin: 1rem 1rem;
+.skills-list li {
+ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ background: #0b73c3df;
+ color: rgb(0, 0, 0);
+ padding: 0.5rem 0.1rem;
+ border-radius: 20px;
 }
 
-.JavaScript {
-  border: solid white;
-  background-color: white;
-  padding: 1rem 1rem;
-  margin: 1rem 1rem;
+.project {
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  border-left: 4px solid #3d3e3f;
 }
 
-footer {
-  color: white;
-  background-color: #6b6c68;
-  text-align: center; 
-  padding: 25px;
-  text-shadow: 2px 2px 2px black;
-  letter-spacing: 2px;
+.project h3 {
+ color: #2c3e50;
 }
 
-.voltar {
-  color: black;
-  font-size: 17px;
+.project a {
+  text-decoration: none;
 }
-aside{
-  padding: 0.5rem;
+.project a:hover{
+  text-decoration: underline;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
 
+aside {
+  background: #e8f4fc;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
 
-@media (max-width: 768px) {
+.social-links {
+ display: flex;
+ gap: 1rem;
+ margin-top: 1rem;
+}
 
-  main {
-    padding: 0;
-  }
+.social-links a {
+  color: #2980b9;
+  text-decoration: none;
+  font-weight: bold;
+}
 
-  h1 {
-    font-size: 40px;
-  }
-
-  
+.foot    {
+ text-align: center; 
+ padding: 1.5rem;
+ background: #2c3e50;
+ color: white;
 }
