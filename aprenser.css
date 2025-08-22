@@ -26,8 +26,6 @@ header {
     display: flex;
     background-color: rgba(26, 23, 23, 0.866);
     padding-left: 2em;  
-
-  
 }
 
 .lista-cabeça {
@@ -188,26 +186,20 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
-    
+ 
     /* ================= Header ================= */
 
     .cabeça {
-        flex-direction: column;  /* Empilha os elementos verticalmente (logo e menu) */
-        align-items: center;     /* Centraliza os itens no eixo cruzado (horizontal) */
-        padding-left: 0;         /* Remove o espaçamento lateral que poderia causar rolagem horizontal */
+        padding-bottom: 1em;
     }
 
     .lista-cabeça {
-        margin-left: -2.48em;           /* Remove o espaçamento fixo que deslocava o menu para a direita */
-        flex-direction: column;   /* Organiza os itens do menu verticalmente */
-        align-items: center;      /* Centraliza os itens do menu */
+        margin-left: -2.49em;           /* Remove o espaçamento fixo que deslocava o menu para a direita */
     }
 
     .lista-cabeça li {
-        width: 90%;              /* Faz cada item de menu ocupar a largura total do contêiner */
+        width: 50%;              /* Faz cada item de menu ocupar a largura total do contêiner */
         text-align: center;       /* Centraliza o texto dentro de cada item */
-        border: none;             /* Remove as bordas laterais */
-        border-bottom: 1px solid rgba(210, 229, 8, 0.916); /* Adiciona uma borda inferior sutil para separar os itens */
     } 
 
     /* Mostra o ícone do menu hamburguer */
@@ -225,10 +217,9 @@ footer {
     background-color: rgba(26, 23, 23, 0.95);
     width: 100%;
     position: absolute;
-    top: 16.20%;
+    top: 84%;
     left: 0;
-    z-index: 1000;
-      }
+}
 
    /* Mostra o menu quando o checkbox está marcado */
      #menu-toggle:checked + .menu-icon + .lista-cabeça {
@@ -264,7 +255,7 @@ footer {
     }
 
     .parte-2-img {
-        width: 32.50em;
+        width: 29em;
         flex-direction: column;
         text-align: center;
     }
@@ -295,9 +286,10 @@ footer {
         width: 100%;
     }
 
-    .parte-4 figcaption {
+    .parte-4 address {
         margin-left: 0;
         text-align: center;
         padding: 1em;
     }
+
 }
