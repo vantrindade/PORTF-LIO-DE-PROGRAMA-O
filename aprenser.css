@@ -1,0 +1,303 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* Ícone do menu hamburguer - oculto em telas grandes */
+.menu-icon {
+    display: none;
+    font-size: 2em;
+    cursor: pointer;
+    padding: 10px;
+    color: rgb(215, 205, 7); 
+
+}
+
+/* Esconde o checkbox do menu */
+#menu-toggle {
+    display: none;
+}
+
+header {
+    position: sticky;
+    top: 0;
+}
+.cabeça {
+    display: flex;
+    background-color: rgba(26, 23, 23, 0.866);
+    padding-left: 2em;  
+
+  
+}
+
+.lista-cabeça {
+    list-style: none;
+    margin-left: 55em;
+    display: flex;
+}
+
+.lista-cabeça li {
+    margin: 10px;
+    padding: 10px;
+    border: solid 1px rgba(210, 229, 8, 0.916);
+}
+
+.lista-cabeça a {
+    text-decoration: none;
+    color: rgb(215, 205, 7);  
+}
+
+.lista-cabeça li:hover {
+    background-color: rgba(19, 18, 18, 0.696);
+    
+}
+
+              /* aqui acaba o header e começa a primeira parte do main  */
+
+.parte-1 {
+    background-color: rgba(255, 255, 0, 0.573);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+    padding-top: 3em;
+}
+
+
+.titulo-primeiro {
+    font-size: 4em;
+    letter-spacing: 2px;
+   font-weight: bold;
+}
+
+.saiba-mais-main {
+    font-size: 16px;
+    text-decoration: none; 
+    background-color: rgb(246, 207, 11);
+    color: black;
+    border-radius: 5px;
+}
+.saiba-mais-main:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    background-color: #f9f9f9;
+}
+article a {
+  padding: 17px 25px;
+  
+}
+          /* aqui acaba a primeira parte do main*/
+
+.parte-2 h2 {
+    text-align: center;
+    padding-top: 2.3em;
+    font-size: 2.5em;
+    
+    font-weight: bold;
+
+}
+.parte-2 {
+    padding-bottom: 6em;
+}
+.parte-2-img {
+    display: flex;
+    justify-content: center;
+    gap: 2em; 
+    padding: 2em 0; 
+    border-radius: 0 0 8px 8px;
+    
+}
+.parte-2-div:hover {
+  border: solid 1px azure;
+  background-color: #f9f9f9;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+.parte-2-div {
+ padding: 30px;
+  border: solid 0px transparent;
+  transition: border 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+}
+.parte-2 figcaption {
+    max-width: 21em;
+    letter-spacing: 1px;
+    padding: 12px;
+    
+}
+.parte-2 aside {
+    text-align: center;
+    background-color:  rgb(246, 207, 11);
+    padding: 15px;
+    margin: 50px auto 5px;
+    width: 13%;
+    border-radius: 5px;
+}
+.parte-2 a {
+     text-decoration: none;
+     color: black;
+}
+.parte-2 aside:hover {
+     transform: scale(1.05);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+      background-color: #f9f9f9;
+}
+           /* aqui acaba a segunda parte do main */
+
+.parte-3 {
+    padding-top: 1em;
+    background-color: rgb(12, 48, 131);
+    display: flex;
+    color: white;
+    padding-left: 5em;
+    height: 40em;
+}
+
+.parte-3-titulo {
+    font-size: 2em;
+    padding-top: 2em;
+}
+
+.parte-3-texto p {
+    letter-spacing: 1px;
+    max-width: 26em;
+    font-size: 21px;
+}
+                  /* aqui acaba a terceira parte do main */
+
+.parte-4 {
+    padding-top: 3em;
+}
+.parte-4 h2{
+    text-align: center;
+    text-transform: uppercase;
+    padding: 1em;
+}
+
+.parte-4 address{
+    padding: 1rem 0;
+    margin-left: 79em;
+    font-weight: bold;
+}
+
+footer {
+  color: white;
+  background-color: #6b6c68;
+  text-align: center; 
+  padding: 1.2em;
+  text-shadow: 2px 2px 2px black;
+  letter-spacing: 2px;
+}
+
+@media screen and (max-width: 768px) {
+    
+    /* ================= Header ================= */
+
+    .cabeça {
+        flex-direction: column;  /* Empilha os elementos verticalmente (logo e menu) */
+        align-items: center;     /* Centraliza os itens no eixo cruzado (horizontal) */
+        padding-left: 0;         /* Remove o espaçamento lateral que poderia causar rolagem horizontal */
+    }
+
+    .lista-cabeça {
+        margin-left: -2.48em;           /* Remove o espaçamento fixo que deslocava o menu para a direita */
+        flex-direction: column;   /* Organiza os itens do menu verticalmente */
+        align-items: center;      /* Centraliza os itens do menu */
+    }
+
+    .lista-cabeça li {
+        width: 90%;              /* Faz cada item de menu ocupar a largura total do contêiner */
+        text-align: center;       /* Centraliza o texto dentro de cada item */
+        border: none;             /* Remove as bordas laterais */
+        border-bottom: 1px solid rgba(210, 229, 8, 0.916); /* Adiciona uma borda inferior sutil para separar os itens */
+    } 
+
+    /* Mostra o ícone do menu hamburguer */
+    .menu-icon {
+    display: block;
+    align-self: flex-end;
+    padding-bottom: 1px;
+    }
+
+  /* Esconde o menu inicialmente */
+    .lista-cabeça {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(26, 23, 23, 0.95);
+    width: 100%;
+    position: absolute;
+    top: 16.20%;
+    left: 0;
+    z-index: 1000;
+      }
+
+   /* Mostra o menu quando o checkbox está marcado */
+     #menu-toggle:checked + .menu-icon + .lista-cabeça {
+    display: flex;
+    }
+
+
+    /* ================= Parte 1 ================= */
+
+    .parte-1 {
+        flex-direction: column;   /* Alinha os elementos em coluna (um em cima do outro) */
+        text-align: center;       /* Centraliza o texto */
+    }
+
+    .titulo-primeiro {
+        font-size: 2em;
+        margin-top: -2rem;
+        line-height: 1.2em;
+    }
+    
+    article a {
+        padding: 13px 20px;
+    }
+
+    .parte-1 img {
+        width: 30em;
+    }
+
+    /* ================= Parte 2 ================= */
+
+    .parte-2 aside {
+        width: 80%;
+    }
+
+    .parte-2-img {
+        width: 32.50em;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .parte-2 figcaption {
+        max-width: 100%;
+        padding: 1em;
+    }
+
+    /* ================= Parte 3 ================= */
+
+    .parte-3 {
+        flex-direction: column;
+        padding: 2em 1em;
+        height: auto;
+        text-align: center;       
+    }
+
+    .parte-3-texto p {
+        font-size: 18px;
+        max-width: 100%;
+    }
+
+    /* ================= Parte 4 ================= */
+
+    .parte-4 img {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .parte-4 figcaption {
+        margin-left: 0;
+        text-align: center;
+        padding: 1em;
+    }
+}
