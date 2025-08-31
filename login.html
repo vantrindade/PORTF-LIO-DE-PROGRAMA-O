@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="MatheusFT">
+  <link rel="stylesheet" href="estilo.login.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+  <title>login</title>
+</head>
+<body>
+  <div class="main">
+    
+    <form action="#"  method="post">
+      <fieldset >
+        <h1>login</h1>
+
+
+        <!-- Campo de Usuário/Email -->
+        <div class="input-container">
+          <input class="input" type="text" id="user" required placeholder=" ">
+          <label  class="label-inpu" for="user">Usuário/Email</label>
+          <ic class="fas fa-user"></i>
+        </div>
+
+        <!-- Campo de Senha -->
+        <div class="input-container">
+          <input class="input" type="password" id="senha" required placeholder=" " minlength="6"  maxlength="8">
+          <label class="label-inpu" for="senha">Senha</label>
+          <i class="fas fa-lock"></i>
+        </div>
+
+        <!-- Checkbox Lembre-se de mim -->
+        <div class="input-check">
+        <input type="checkbox" id="check"> 
+        <label for="check">Lembre-me</label>
+          
+        </div>
+
+        <!-- Links e botão de envio -->
+        <div class="but">
+          <a href="#">Esqueci a senha</a>
+        </div>
+        
+        <div class="login">
+          <button type="submit">Login</button>
+        </div>
+
+        <!-- Texto para quem não tem conta -->
+        <span>Não tem uma conta? <a class="button" href="register.html">Registe-se</a></span>
+      </fieldset>
+    </form>
+
+  </div>
+  
+</body>
+</html>

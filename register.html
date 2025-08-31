@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="MatheusFT">
+  <link rel="stylesheet" href="estilo.register.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+  <title>login</title>
+</head>
+<body>
+  <div class="main">
+    
+    <form action="#"  method="post">
+      <fieldset >
+        <h1>registre-se</h1>
+
+        <!-- Campo de Usuário/Email -->
+        <div class="input-container">
+          <input class="input" type="text" id="user" required placeholder=" " minlength="4" >
+          <label  class="label-inpu" for="user">Usuário</label>
+          <ic class="fas fa-user"></i>
+        </div>
+
+         <div class="input-container">
+          <input class="input" type="email" id="user" required placeholder=" " >
+          <label  class="label-inpu" for="user">Email</label>
+          <ic class="fas fa-envelope"></i>
+        </div>
+
+        <!-- Campo de Senha -->
+        <div class="input-container">
+          <input class="input" type="password" id="senha" required placeholder="" minlength="6"  maxlength="8">
+          <label class="label-inpu" for="senha">Senha</label>
+          <i class="fas fa-lock"></i>
+        </div>
+
+         <div class="input-container">
+          <input class="input" type="password" id="senha" required placeholder=" "  minlength="6"  maxlength="8">
+          <label class="label-inpu" for="senha">confirme a senha</label>
+          <i class="fas fa-lock"></i>
+        </div>
+
+        <!-- Checkbox Lembre-se de mim -->
+        <div class="input-check">
+          <input type="checkbox" id="check" required> 
+          <label for="check">concordo com os termo e condições</label>
+        </div>
+          
+        
+        <div class="login">
+          <button type="submit">Registra-se</button>
+        </div>
+
+        <!-- Texto para quem não tem conta -->
+        <span>Já tem conta? <a class="button" href="login.html">Faça Login</a></span>
+      </fieldset>
+    </form>
+
+  </div>
+  
+</body>
+</html>
