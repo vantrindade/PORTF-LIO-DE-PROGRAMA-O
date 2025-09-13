@@ -1,93 +1,190 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Portfólio matheus F.T</title>
     <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>portfolio</title>
 </head>
+
 <body>
-    <header>
-        <div class="profile">
-            <img src="eu.jpg">
-            <h1>Matheus ferreira trindade</h1>
-            <p class="tagline">desenvolvedor inciante</p>
-        </div>
-        
-        <nav>
+        <header>
+        <nav class="header_nav">
+
             <ul>
-                <li><a href="#sobre">Sobre Mim</a></li>
-                <li><a href="#habilidades">Habilidades</a></li>
-                <li><a href="#projetos">Projetos</a></li>
-                <li><a href="#contato">Contato</a></li>
+                <li><a href="#sobre mim">sobre</a></li>
+                <li><a href="#habilidades">habilidades</a></li>
+                <li><a href="#projetos">projetos</a></li>
+                <li><a href="#contato">contato</a></li>
             </ul>
+
+            
         </nav>
+
     </header>
 
     <main>
-        <section id="sobre">
-            <h2>Sobre Mim</h2>
-            <p> Estou no 2º ano do curso de Análise e Desenvolvimento de Sistemas
-                 e tenho me dedicado
-     ao aprendizado constante na área de desenvolvimento Front-End. <br>
-    Tenho conhecimento em HTML, CSS e JavaScript, e estou aprendendo frameworks
- como React. <br> Sou curioso, gosto de resolver problemas e estou sempre buscando
-  melhorar minhas habilidades técnicas e criativas. <br>
-    Busco uma oportunidade de estágio onde eu possa aplicar meus conhecimentos,
-     aprender com profissionais experientes e contribuir com projetos reais.</p>
-        </section>
+        <div class="div.mae">
+                <section class="parte_1">
+                    <img src="imagens/eu.jpg" alt="eu">
+                    
+                    <div class="inicio_color">
+                        <h2>olá, eu sou Matheus F. Trindade</h2>
+                        <h1>Desenvolvedor Front-End iniciante</h1>
+                        <p>estagiario/junior</p>
+                        
+                        <div class="git_link">
+                            <a href="Curriculo-Matheus Ferreira Trindade.pdf.pdf" download="Curriculo-Matheus Ferreira Trindade.pdf">
+                                Baixar meu CV <i class="fa fa-download" aria-hidden="true"></i>
+                            </a>
 
-        <section id="habilidades">
-            <h2>Habilidades</h2>
-            <ul class="skills-list">
-                <li>JavaScriptES6</li>
-                <li>HTML5</li>
-                <li>CSS3</li>
-                <li>familiaridade com github</li>
-                <li>Conhecimento básico de React.js</li>
-                <li>familiaridade com Visual Studio Code</li>
-                <li>Proatividade e interesse em se desenvolver na área</li>
-            </ul>
-        </section>
+                            <a href="https://github.com/seuusuario" >
+                                <i class="devicon-github-plain"></i>
+                            </a>
 
-        <section id="projetos">
-            <h2>Projetos</h2>
-            <article class="project">
-                <h3>Projeto 1</h3>
-                <a href="curriculo/curriculo.html" alt="curriculo">curriculo profissiona</a>
-            </article>
+                            <a href="https://www.linkedin.com/in/seuusuario">
+                                <i class="devicon-linkedin-plain"></i>
+                            </a>
 
-            <article class="project">
-                <h3>Projeto 2</h3>
-                <a href="sites de cursos/index.html" alt="curso web dev">layout de um site de cursos web desenvolvedor</a>
-            </article>
+                         </div>
+                        
+                        
+                  </div>
+               </section>
 
-            <article class="project">
-                <h3>Projeto 3</h3>
-                <a href="vendas/vendas de planos.html" alt="curso web dev">layout de um site de site de vendas de planos</a>
-            </article>
+            <section id="sobre mim" class="parte_2">
 
-            <article class="project">
-                <h3>Projeto 4</h3>
-                <a href="moda/modas.html" alt="modas viva">layout de um site de moda</a>
-            </article>
+                <div class="sobre_mim">
+                    <h1>sobre mim</h1>
+                    <p>Busco uma oportunidade de estágio em TI 
+                    com foco em desenvolvimento front-end, 
+                    onde possa aprimorar minhas habilidades 
+                    em tecnologias web e contribuir ativamente
+                    para os projetos da empresa. Atualmente,
+                    estou no 3º semestre do curso de Análise
+                    e Desenvolvimento de Sistemas (ADS),
+                    o que me proporciona uma base sólida 
+                    em programação, lógica e boas práticas
+                    de desenvolvimento. Tenho grande 
+                    interesse em expandir meus conhecimentos para
+                    o back-end, especialmente com Java, com o 
+                    objetivo de me tornar um desenvolvedor 
+                    completo e preparado para atuar em todas as 
+                    etapas do ciclo de desenvolvimento de
+                    sistemas.</p>
+                </div>
 
-        </section>
+            </section>
 
-        <aside>
-            <h3>redes sociais</h3>
-            <div class="social-links">
-                <a href="https://github.com/vantrindade">GitHub</a>
-                <a href="https://www.linkedin.com/in/matheus-ferreira-trindade-284308227/">Linkedin</a>
-            </div>
-        </aside>
+            <section id="habilidades" class="parte_3">
+                <div class="habilidades">
+
+                    <div class="icones">
+                      <h5>HTML</h5>
+                      <i class="devicon-html5-plain"></i>
+                    </div>
+
+                   <div class="icones">
+                      <h5>Css</h5>
+                      <i class="devicon-css3-plain"></i>
+                   </div>
+
+                    <div class="icones">
+                      <h5>typescript</h5>
+                      <i class="devicon-typescript-plain"></i>
+                    </div>
+                
+                    <div class="icones">
+                      <h5>javascript</h5>
+                      <i class="devicon-javascript-plain"></i>
+                   </div>
+                  
+                  <div class="icones">
+                      <h5>tailwind-Css</h5>
+                      <i class="devicon-tailwindcss-original"></i>
+                    </div>
+
+                   <div class="icones">
+                      <h5>Sass</h5>
+                      <i class="devicon-sass-original "></i>
+                    </div>
+
+                    <div class="icones">
+                       <h5>Next.js</h5>
+                       <i class="fas fa-code"></i>
+                    </div>
+
+                   <div class="icones">
+                      <h5>react</h5>
+                      <i class="devicon-react-original"></i>
+                   </div>
+               </div>
+
+            </section>
+
+            <section id="projetos">
+                <div class="mae_projetos">
+
+                    <div class="projetos">
+                    <a href="vendas/vendas de planos.html">
+                        <img src="imagens/planos.png" alt="">
+                        <figcaption>vendas de plano</figcaption>
+                    </a>
+                    </div>
+                    
+                    <div class="projetos">
+                    <a href="/moda/modas">
+                        <img src="imagens/modas.png" alt="">
+                        <figcaption>modas</figcaption>
+                    </a>
+                    </div>
+
+                    <div class="projetos">
+                    <a href="/aprenser.com/aprenser">
+                        <img src="imagens/aprenser (1).png" alt="">
+                        <figcaption>aprenser</figcaption>
+                    </a>
+                    </div>
+
+                    <div class="projetos">
+                    <a href="/login-login/login">
+                        <img src="imagens/login-register.png" alt="">
+                        <figcaption>login/register</figcaption>
+                    </a>
+                    </div>
+                    
+                </div>
+            
+            </section>
+
+
+                <address id="contato">
+                    <div class="contato">
+                        <div class="icone-adress">
+                            <i class="fas fa-envelope"></i>
+                            <h2>e-mail</h2>
+                            <h3>vantrindade.matheus@gmail.com</h3>
+                        </div>
+
+                        <div class="icone-adress">
+                            <i class="fas fa-mobile-alt"></i>
+                            <h2>telefone</h2>
+                            <h2>(11)999450057</h>
+                        </div>
+                        <div class="icone-adress">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <h2>enderoçe</h2>
+                            <h3>francisco morato, SP</h3>
+                        </div>
+                    </div>    
+                </address>
+        </div>
     </main>
-
-    <footer id="contato">
-        <section class="foot">
-        <h4>Contato</h4>
-        <p>gmail: <a>vantriande.matheus@gmail.com</a></p>
-        <p>celular:<a>(11)999450057</a></p>
+    <footer>
+        desenvolvido por Matheus FT
     </footer>
 </body>
 
@@ -96,163 +193,237 @@
 
  /*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@500;600&display=swap");
+
+:root {
+  --primary-color: rgba(255, 255, 255, 0.201);
+  --second-color: rgba(16, 177, 201, 0.789);
+}
+
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: rgb(187, 193, 199);
-  margin: 0;
+    color: aliceblue;
+    background-color: rgba(3, 3, 27, 0.914);
+    font-family: sans-serif;
 }
 
-header {
-  text-align: center;
-  background-image: url(imagen.fundo1.jpg);
-  background-size: cover;
-  background-position: bottom;
-  background-repeat: no-repeat;
-  padding: 20px;
-  margin: 1px;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-.profile h1 {
-  color: wheat;
- text-shadow: 2px 2px 2px rgb(10, 10, 10);}
-
-.profile img {
- width: 150px;
- height: 150px;
- border-radius: 80%;
- object-fit: cover;
- border: 3px solid rgb(1, 1, 1);
- margin-bottom: 1rem;
+html {
+    scroll-behavior: smooth;
 }
 
-.tagline {
- font-style: italic;
- margin: 0.5rem 0;
- font-size: 30px;
- color: wheat;
- text-shadow: 2px 2px 2px rgb(10, 10, 10);
+.header_nav ul {
+    display: flex;
+    gap: 1.9em;
+    justify-content: center;
+    list-style: none;
+    padding: .2em;
 }
 
-nav ul {
-  display: flex;
-  justify-content: center;
-  list-style: none;
-  margin: 2rem;
+.header_nav a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: aliceblue;
+    padding: .6em;
+    border-radius: 20em;
 }
 
-nav li {
-  margin: 1rem;
-  text-shadow: 2px 2px 2px rgb(10, 10, 10);
-  font-size: 20px;
+.header_nav a:hover {
+    background-color:var(--primary-color);
+}
+
+.header_nav {
+    background-color: rgba(27, 25, 25, 0.81);
+    margin: 0 30em;
+    border: solid 1px black;
+    border-radius: 20em;
+    margin-top: 1em ;
+}
+
+
+/*///////////////// aqui acaba o header e comaça o main_parte um///////////////*/
+
+.parte_1 {
+    display: flex;
+    margin: 8em;
+    justify-content: center;
+    letter-spacing: 3px;
+    line-height: 1em;
+    padding: 5em 0;
 
 }
 
-nav a {
-  color: rgb(251, 235, 235);
-  text-shadow: 1px 2px 2px rgb(10, 10, 10);
-  text-decoration: none;
-  font-weight: bold;
-  padding: 1.5rem 1rem;
-  border-radius: 5px;
-  transition: background-color 0.3s;
-  padding: 0;
-  min-width: 200px;
+.parte_1 img {
+    width: 150px;
+    height: 150px;
+    border-radius: 80%;
+    object-fit: cover;
+    border: 3px solid var(--primary-color);
 }
 
-nav a:hover {
- background-color: rgba(255, 255, 255, 0.2);
+.inicio_color {
+    padding: 0 5em ;
 }
 
-main {
-  max-width: 1200px;
-  margin: 2rem auto;
-  padding: 0.1rem;
+.inicio_color h1 {
+    color: var(--second-color);
+    text-transform: uppercase;
 }
 
-section {
- margin-bottom: 3rem;
- padding: 1.5rem;
- background: white;
- border-radius: 8px;
- box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+.inicio_color h2 {
+    text-transform: uppercase;
 }
 
-h2 {
- color: #2c3e50;
- margin-bottom: 1rem;
- padding-bottom: 0.5rem;
- border-bottom: 2px solid #3498db;
+.inicio_color p {
+    color: black;
+    background-color: rgba(53, 83, 236, 0.692);
+    width: 21%;
+    padding: .5em;
+    border-radius: 10em;
+    font-weight: bold;
+    font-size: .9em;
 }
 
-.skills-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1.2rem;
-  letter-spacing: 1.2px;
-  list-style: none;
+.inicio_color p:hover {
+    transform: scale(1.05);
 }
 
-.skills-list li {
- font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
- background: #0b73c3df;
- color: rgb(0, 0, 0);
- padding: 0.5rem 0.1rem;
- border-radius: 20px;
+.git_link a{
+    text-decoration: none;
+    color: white;
+    display: flex;
+   border: solid 1px;
+   border-radius: 20em;
+   padding: .4em;
+    font-size: 1.2em;
+
 }
 
-.skills-list li:hover {
-      transform: scale(1.05);
-      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-      cursor: pointer;
-    }
-.project {
-  margin-bottom: 1.5rem;
-  padding: 1rem;
-  border-left: 4px solid #3d3e3f;
+.git_link {
+    display: flex;
+    gap: 1em;
 }
 
-.project h3 {
- color: #2c3e50;
+.git_link a:hover{
+    color: black;
+    background-color: white;
 }
 
-.project a {
-  text-decoration: none;
-}
-.project a:hover{
-  text-decoration: underline;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-}
-
-aside {
-  background: #e8f4fc;
-  padding: 1.5rem;
-  border-radius: 8px;
-  margin-bottom: 2rem;
+/*///////////////////////////////aqui começa o a segunda parte /////*/
+.sobre_mim {
+    justify-content: center;
+    text-align: center;
+    box-sizing: border-box;
+    margin: 13em 20em;
 }
 
-.social-links {
- display: flex;
- gap: 1rem;
- margin-top: 1rem;
+.sobre_mim p {
+    letter-spacing: .1em;
+    line-height: 1.5em;
+    
 }
 
-.social-links a {
-  color: #2980b9;
-  text-decoration: none;
-  font-weight: bold;
+/*///////////////////////////////aqui começa o a terceira parte /////*/
+
+.habilidades {
+    display: flex;
+    margin: 15em 27em;
+    gap: 2.3em;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
-.foot    {
- text-align: center; 
- padding: 1.5rem;
- background: #2c3e50;
- color: white;
+.icones {
+        background-color: rgba(27, 25, 25, 0.81);
+        justify-content: center;
+        text-align: center;
+        padding: .1em 2em;
+        border-radius: 3em 0 0;
+        border-bottom: solid 3px;
 }
 
-@media screen and (max-width: 768px) {
-  nav li {
-    margin: 0.4em;
-  }
+.icones i {
+    font-size: 3.9em;
+    padding: .1em 0;
+    color: darkblue;
 
+}
+
+.icones:hover {
+    transform: scale(1.09);
+    cursor: pointer;
+}
+
+.devicon-html5-plain, .devicon-css3-plain, .devicon-typescript-plain, .devicon-javascript-plain {
+    color: darkblue;
+    padding: .2em 0;
+
+}
+
+/*///////////////////////////////aqui começa o a quarta parte /////*/
+
+
+.mae_projetos {
+    display: flex;
+    gap: 5em;
+    max-width: 100em;
+    justify-content: center;
+    flex-wrap: wrap;
+
+
+}
+
+.projetos img {
+    width: 30em;
+}
+
+.projetos figcaption {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.605);
+    margin: -.3em 0;
+    padding: .5em;
+}
+
+.projetos a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.projetos:hover {
+    transform: scale(1.09);
+}
+
+/*///////////////////////////////aqui começa o a quinta parte /////*/
+
+.contato {
+    display: flex;
+    padding: 20em 0;
+    margin: 1em 15em;
+    gap: 10em;
+}
+.icone-adress:hover {
+    transform: scale(1.09);
+    cursor: pointer;
+}
+.icone-adress {
+    gap: 2em;
+    text-align: center;
+    box-sizing: border-box;
+
+}
+
+.icone-adress .fas {
+    color: darkblue;
+    background-color: black;
+    font-size: 1em;
+    width: 1em;
+    height: 1em;
+    padding: 1em;
+    border-radius: 20em;
+}
+
+
+footer {
+    background-color: rgb(2, 2, 2, .5);
+    padding: 1em;
+    text-align: center;
 }
