@@ -11,7 +11,7 @@
 </head>
 
 <body>
-        <header>
+    <header>
         <nav class="header_nav">
 
             <ul>
@@ -50,8 +50,6 @@
                             </a>
 
                          </div>
-                        
-                        
                   </div>
                </section>
 
@@ -80,6 +78,8 @@
             </section>
 
             <section id="habilidades" class="parte_3">
+                     <h1>habilidades</h1>
+
                 <div class="habilidades">
 
                     <div class="icones">
@@ -104,7 +104,7 @@
                   
                   <div class="icones">
                       <h5>tailwind-Css</h5>
-                      <i class="devicon-tailwindcss-original"></i>
+                      <i class="devicon-tailwindcss-plain"></i>
                     </div>
 
                    <div class="icones">
@@ -122,10 +122,10 @@
                       <i class="devicon-react-original"></i>
                    </div>
                </div>
-
             </section>
 
-            <section id="projetos">
+            <section id="projetos" class="parte_4">
+                <h1>projetos</h1>
                 <div class="mae_projetos">
 
                     <div class="projetos">
@@ -136,21 +136,21 @@
                     </div>
                     
                     <div class="projetos">
-                    <a href="/moda/modas">
+                    <a href="/moda/modas.html">
                         <img src="imagens/modas.png" alt="">
                         <figcaption>modas</figcaption>
                     </a>
                     </div>
 
                     <div class="projetos">
-                    <a href="/aprenser.com/aprenser">
-                        <img src="imagens/aprenser (1).png" alt="">
+                    <a href="/aprenser.com/aprenser.html">
+                        <img src="imagens/aprenser.png" alt="">
                         <figcaption>aprenser</figcaption>
                     </a>
                     </div>
 
                     <div class="projetos">
-                    <a href="/login-login/login">
+                    <a href="/login-login/login.">
                         <img src="imagens/login-register.png" alt="">
                         <figcaption>login/register</figcaption>
                     </a>
@@ -163,21 +163,34 @@
 
                 <address id="contato">
                     <div class="contato">
-                        <div class="icone-adress">
-                            <i class="fas fa-envelope"></i>
-                            <h2>e-mail</h2>
-                            <h3>vantrindade.matheus@gmail.com</h3>
-                        </div>
 
-                        <div class="icone-adress">
-                            <i class="fas fa-mobile-alt"></i>
-                            <h2>telefone</h2>
-                            <h2>(11)999450057</h>
+                        <div class="item">
+                            <div class="icone-adress">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="conte">
+                                <h2>e-mail</h2>
+                                <h3>vantrindade.matheus@gmail.com</h3>
+                            </div>
                         </div>
-                        <div class="icone-adress">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <h2>enderoçe</h2>
-                            <h3>francisco morato, SP</h3>
+                        
+                        <div class="item">
+                            <div class="icone-adress">
+                                <i class="fas fa-mobile-alt"></i>
+                            </div>
+                            <div class="conte">
+                                <h2>telefone</h2>
+                                <h3>(11) 99945-0057</h3>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="icone-adress">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="conte">
+                                <h2>endereço</h2>
+                                <h3>francisco morato, SP</h3>
+                            </div>
                         </div>
                     </div>    
                 </address>
@@ -190,11 +203,9 @@
 
 </html>
 
-
  /*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@500;600&display=swap");
-
+ 
 :root {
   --primary-color: rgba(255, 255, 255, 0.201);
   --second-color: rgba(16, 177, 201, 0.789);
@@ -216,6 +227,7 @@ html {
     justify-content: center;
     list-style: none;
     padding: .2em;
+    flex-wrap: wrap;
 }
 
 .header_nav a {
@@ -243,6 +255,7 @@ html {
 
 .parte_1 {
     display: flex;
+    flex-wrap: wrap;
     margin: 8em;
     justify-content: center;
     letter-spacing: 3px;
@@ -275,8 +288,9 @@ html {
 .inicio_color p {
     color: black;
     background-color: rgba(53, 83, 236, 0.692);
-    width: 21%;
-    padding: .5em;
+    width: auto;
+    max-width: 21%;
+    padding: .6em 1em;
     border-radius: 10em;
     font-weight: bold;
     font-size: .9em;
@@ -290,16 +304,15 @@ html {
     text-decoration: none;
     color: white;
     display: flex;
-   border: solid 1px;
-   border-radius: 20em;
-   padding: .4em;
-    font-size: 1.2em;
-
+    border: solid 1px;
+    border-radius: 20em;
+    padding: .7em;
 }
 
 .git_link {
     display: flex;
     gap: 1em;
+    flex-wrap: wrap;
 }
 
 .git_link a:hover{
@@ -308,6 +321,7 @@ html {
 }
 
 /*///////////////////////////////aqui começa o a segunda parte /////*/
+
 .sobre_mim {
     justify-content: center;
     text-align: center;
@@ -318,19 +332,21 @@ html {
 .sobre_mim p {
     letter-spacing: .1em;
     line-height: 1.5em;
-    
 }
 
 /*///////////////////////////////aqui começa o a terceira parte /////*/
 
 .habilidades {
     display: flex;
-    margin: 15em 27em;
+    margin: 2em 27em;
+    max-width: 100%;
     gap: 2.3em;
     justify-content: center;
     flex-wrap: wrap;
 }
-
+.parte_3 h1 {
+    text-align: center;
+}
 .icones {
         background-color: rgba(27, 25, 25, 0.81);
         justify-content: center;
@@ -341,7 +357,7 @@ html {
 }
 
 .icones i {
-    font-size: 3.9em;
+    font-size: 3em;
     padding: .1em 0;
     color: darkblue;
 
@@ -367,12 +383,18 @@ html {
     max-width: 100em;
     justify-content: center;
     flex-wrap: wrap;
+    margin-top: 1em;
+}
 
-
+.parte_4 h1 {
+    text-align: center;
+    margin-top: 9em;
+    padding: 2em;
 }
 
 .projetos img {
-    width: 30em;
+    width: 100%;
+    max-width: 28.4em;
 }
 
 .projetos figcaption {
@@ -394,20 +416,30 @@ html {
 
 /*///////////////////////////////aqui começa o a quinta parte /////*/
 
-.contato {
+.contato { 
     display: flex;
-    padding: 20em 0;
-    margin: 1em 15em;
-    gap: 10em;
+    justify-content: center;
+    gap: 5em;
+    flex-wrap: wrap; /* permite quebrar linha no mobile */
+    margin: 15em 0;
+    text-align: center;
 }
-.icone-adress:hover {
+
+.item {
+    display: flex;
+    flex-direction: column; /* ícone em cima, texto embaixo */
+    align-items: center;
+}
+
+
+.item:hover {
     transform: scale(1.09);
     cursor: pointer;
 }
 .icone-adress {
     gap: 2em;
+    margin: 1rem;
     text-align: center;
-    box-sizing: border-box;
 
 }
 
@@ -420,10 +452,123 @@ html {
     padding: 1em;
     border-radius: 20em;
 }
-
+.conte h2, h3{
+    font-size: 1em;
+}
 
 footer {
     background-color: rgb(2, 2, 2, .5);
     padding: 1em;
     text-align: center;
+}
+
+
+@media (max-width: 668px) {
+    /* Tablets pequenos e celulares grandes */
+
+    nav {
+        margin: 0;
+    }
+    .header_nav {
+    display: inline;
+    justify-content: center;
+    }
+
+    .header_nav ul {
+    gap: 2.7em; 
+    margin: 0;
+    padding: 0;
+    }
+
+/*///////////////// aqui acaba o header e comaça o main_parte um///////////////*/
+
+    .parte_1 {
+        padding: 0;
+        margin: 4em auto;
+      }
+
+    .parte_1 img {
+        width: 9em;
+        height: 9em;
+    }
+
+    .inicio_color h2 {
+        font-size: 1.3em;
+        line-height: 1.3em;
+    }
+
+    .inicio_color h1 {
+        line-height: 1em;
+    }
+
+    .inicio_color p {
+        max-width: 11em;
+        font-size: 1em;
+        padding: 1em;
+    }
+
+    /*///////////////////////////////aqui começa o a segunda parte /////*/
+
+    .sobre_mim {
+        margin: .1em;
+        padding-bottom: 2em;
+    }
+
+/*///////////////////////////////aqui começa o a terceira parte /////*/
+
+    .habilidades {
+        margin: .2em;
+        padding-top: 1em;
+    }   
+    .parte_3 {
+        margin-top: 5em;
+        margin-bottom: -10em;
+    }
+
+/*///////////////////////////////aqui começa o a quarta parte /////*/
+
+
+     .parte_4 h1 {
+        padding: 1em 0;
+     }
+    .mae_projetos{ 
+        display: flex;
+      }
+
+    .projetos {
+        width: 2em;
+        display: flex;
+        margin-left: -2em;
+        padding-right: 7em;
+    }
+
+    .projetos img {
+        width: 11em;
+    }
+
+/*///////////////////////////////aqui começa o contato /////*/
+
+
+  .contato {
+    display: flex;
+    flex-direction: column; /* ícones em coluna no mobile */
+    align-items: center;
+    gap: 3em;
+    width: 100%;
+    margin: 0 auto;
+    padding: 4em 0;
+    text-align: center;
+  }
+
+  .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+  }
+
+  .conte {
+    margin-top: 0;
+    padding: 0.5em;
+  }
 }
