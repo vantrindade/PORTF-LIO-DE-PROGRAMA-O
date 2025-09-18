@@ -150,8 +150,15 @@
                     </div>
 
                     <div class="projetos">
-                    <a href="/login-login/login.">
+                    <a href="login-login/login.html">
                         <img src="imagens/login-register.png" alt="">
+                        <figcaption>login/register</figcaption>
+                    </a>
+                    </div>
+
+                    <div class="projetos">
+                    <a href="emoji-animation/">
+                        <img src="imagens/animation.png" alt="">
                         <figcaption>login/register</figcaption>
                     </a>
                     </div>
@@ -214,7 +221,7 @@
 body {
     color: aliceblue;
     background-color: rgba(3, 3, 27, 0.914);
-    font-family: sans-serif;
+    font-family: "Open Sans", sans-serif;
 }
 
 html {
@@ -223,10 +230,9 @@ html {
 
 .header_nav ul {
     display: flex;
-    gap: 1.9em;
+    gap: 3em;
     justify-content: center;
     list-style: none;
-    padding: .2em;
     flex-wrap: wrap;
 }
 
@@ -234,8 +240,8 @@ html {
     text-decoration: none;
     text-transform: uppercase;
     color: aliceblue;
-    padding: .6em;
-    border-radius: 20em;
+    padding:  .6em .1em;
+    border-radius: .9em;
 }
 
 .header_nav a:hover {
@@ -246,10 +252,11 @@ html {
     background-color: rgba(27, 25, 25, 0.81);
     margin: 0 30em;
     border: solid 1px black;
-    border-radius: 20em;
-    margin-top: 1em ;
-}
+    border-radius: .9em;
+    margin-top: 1em;
+    animation: slide-in-fwd-left 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 
+}
 
 /*///////////////// aqui acaba o header e comaça o main_parte um///////////////*/
 
@@ -261,8 +268,22 @@ html {
     letter-spacing: 3px;
     line-height: 1em;
     padding: 5em 0;
+     animation: slide-in-fwd-left 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 
 }
+@-webkit-keyframes slide-in-fwd-left {
+  0% {
+    -webkit-transform: translateZ(-1400px) translateX(-1000px);
+            transform: translateZ(-1400px) translateX(-1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(0) translateX(0);
+            transform: translateZ(0) translateX(0);
+    opacity: 1;
+  }
+}
+
 
 .parte_1 img {
     width: 150px;
@@ -273,7 +294,7 @@ html {
 }
 
 .inicio_color {
-    padding: 0 5em ;
+    padding: 1em 5em ;
 }
 
 .inicio_color h1 {
@@ -287,13 +308,25 @@ html {
 
 .inicio_color p {
     color: black;
-    background-color: rgba(53, 83, 236, 0.692);
     width: auto;
-    max-width: 21%;
+    max-width: 22%;
     padding: .6em 1em;
     border-radius: 10em;
     font-weight: bold;
     font-size: .9em;
+    animation: color-change-3x 4s linear infinite alternate both;   
+}
+
+@-webkit-keyframes color-change-3x {
+  0% {
+    background: #19dcea;
+  }
+  50% {
+    background: rgba(72, 98, 227, 0.575);
+  }
+  100% {
+    background: #1111a3;
+  }
 }
 
 .inicio_color p:hover {
@@ -320,13 +353,13 @@ html {
     background-color: white;
 }
 
-/*///////////////////////////////aqui começa o a segunda parte /////*/
+/*///////////////////////////////aqui começa a parte 2 /////*/
 
 .sobre_mim {
     justify-content: center;
     text-align: center;
     box-sizing: border-box;
-    margin: 13em 20em;
+    margin: 16em 20em;
 }
 
 .sobre_mim p {
@@ -334,13 +367,13 @@ html {
     line-height: 1.5em;
 }
 
-/*///////////////////////////////aqui começa o a terceira parte /////*/
+/*///////////////////////////////aqui começa a parte 3 /////*/
 
 .habilidades {
     display: flex;
     margin: 2em 27em;
     max-width: 100%;
-    gap: 2.3em;
+    gap: 3em;
     justify-content: center;
     flex-wrap: wrap;
 }
@@ -359,8 +392,6 @@ html {
 .icones i {
     font-size: 3em;
     padding: .1em 0;
-    color: darkblue;
-
 }
 
 .icones:hover {
@@ -369,21 +400,21 @@ html {
 }
 
 .devicon-html5-plain, .devicon-css3-plain, .devicon-typescript-plain, .devicon-javascript-plain {
-    color: darkblue;
     padding: .2em 0;
 
 }
 
-/*///////////////////////////////aqui começa o a quarta parte /////*/
+/*///////////////////////////////aqui começa a parte 4 /////*/
 
 
 .mae_projetos {
     display: flex;
-    gap: 5em;
-    max-width: 100em;
-    justify-content: center;
     flex-wrap: wrap;
-    margin-top: 1em;
+    margin: 0 10em;
+}
+.projetos {
+    max-width: 30%;
+    padding: 1em .2em;
 }
 
 .parte_4 h1 {
@@ -393,25 +424,24 @@ html {
 }
 
 .projetos img {
-    width: 100%;
-    max-width: 28.4em;
+    max-width: 80%;
 }
 
 .projetos figcaption {
     text-align: center;
     background-color: rgba(0, 0, 0, 0.605);
-    margin: -.3em 0;
-    padding: .5em;
+    width: 80%;
+    margin-top: -.3em;
+    padding: .9em 0;
 }
 
 .projetos a {
     text-decoration: none;
     color: white;
-    font-weight: bold;
 }
 
 .projetos:hover {
-    transform: scale(1.09);
+    transform: scale(1.05);
 }
 
 /*///////////////////////////////aqui começa o a quinta parte /////*/
@@ -419,7 +449,7 @@ html {
 .contato { 
     display: flex;
     justify-content: center;
-    gap: 5em;
+    gap: 10em;
     flex-wrap: wrap; /* permite quebrar linha no mobile */
     margin: 15em 0;
     text-align: center;
@@ -463,11 +493,13 @@ footer {
 }
 
 
-@media (max-width: 668px) {
+@media (max-width: 768px) {
     /* Tablets pequenos e celulares grandes */
+
 
     nav {
         margin: 0;
+        padding: 0;
     }
     .header_nav {
     display: inline;
@@ -475,7 +507,7 @@ footer {
     }
 
     .header_nav ul {
-    gap: 2.7em; 
+    gap: 2em; 
     margin: 0;
     padding: 0;
     }
@@ -483,9 +515,13 @@ footer {
 /*///////////////// aqui acaba o header e comaça o main_parte um///////////////*/
 
     .parte_1 {
-        padding: 0;
-        margin: 4em auto;
+        margin: 0;
       }
+
+    .inicio_color {
+        width: 60%;
+        padding-left: 1em;
+    }
 
     .parte_1 img {
         width: 9em;
@@ -493,7 +529,7 @@ footer {
     }
 
     .inicio_color h2 {
-        font-size: 1.3em;
+        font-size: 1.2em;
         line-height: 1.3em;
     }
 
@@ -502,8 +538,7 @@ footer {
     }
 
     .inicio_color p {
-        max-width: 11em;
-        font-size: 1em;
+        max-width: 69%;
         padding: 1em;
     }
 
@@ -517,33 +552,31 @@ footer {
 /*///////////////////////////////aqui começa o a terceira parte /////*/
 
     .habilidades {
-        margin: .2em;
+        margin: 1.3em;
         padding-top: 1em;
     }   
     .parte_3 {
-        margin-top: 5em;
-        margin-bottom: -10em;
+    margin-top: 10em;
     }
 
-/*///////////////////////////////aqui começa o a quarta parte /////*/
+/*//////////////////////////////aqui começa o a quarta parte /////*/
 
 
      .parte_4 h1 {
-        padding: 1em 0;
+        margin-top: 5em;
      }
     .mae_projetos{ 
         display: flex;
+        flex-wrap: wrap;
+         width: 100%;
+        max-width: 50em;
+        margin: 1em 0;
+        box-sizing: border-box;
       }
 
-    .projetos {
-        width: 2em;
-        display: flex;
-        margin-left: -2em;
-        padding-right: 7em;
-    }
 
     .projetos img {
-        width: 11em;
+        width: 100%;
     }
 
 /*///////////////////////////////aqui começa o contato /////*/
@@ -572,3 +605,4 @@ footer {
     padding: 0.5em;
   }
 }
+
